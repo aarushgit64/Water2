@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+
+    // Step 1: Greet the Player
+    cout << "Ah, Trainer!" << endl;
+    cout << "Welcome to the world of Pokémon!" << endl;
+    cout << "Today is a momentous day—you’ll be choosing your very first Pokémon." << endl;
+    cout << "Every great Trainer remembers this moment for the rest of their lives." << endl;
+    cout << "So, choose wisely, young one!" << endl << endl;
+
+    // Step 2: Display the Pokémon Choices
+    cout << "Here are your choices:" << endl;
+    cout << "1. Charmander" << endl;
+    cout << "2. Bulbasaur" << endl;
+    cout << "3. Squirtle" << endl;
+    cout << "Enter the number of the Pokémon you choose: ";
+    
+    // Step 3: Capture the Player’s Choice
+    cin >> choice;
+
+    // Step 4: Confirm the Choice using Switch Statement
+    switch (choice) {
+        case 1:
+            cout << "Professor Oak: A fiery choice! Charmander is yours!" << endl;
+            break;
+        case 2:
+            cout << "Professor Oak: A fine choice! Bulbasaur is always ready to grow on you!" << endl;
+            break;
+        case 3:
+            cout << "Professor Oak: Splendid! Squirtle will keep you cool under pressure!" << endl;
+            break;
+        default:
+            cout << "Professor Oak: Hmm, that doesn't seem right. Let me choose for you… Just kidding! Let's go with Pikachu, the surprise guest!" << endl;
+            break;
+    }
+
+    return 0;
+}
